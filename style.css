@@ -1,0 +1,25 @@
+body {
+  margin: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.search {
+    display: flex;
+    justify-content: space-around;
+}
+
+.search button {
+}
+
+#iconsContainer {
+    background: rgba(225, 225, 225, 0.5);
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    padding: 1rem;
+}
