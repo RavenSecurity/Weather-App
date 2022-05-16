@@ -8,8 +8,20 @@ body {
 
 section {
     display: flex;
-    justify-content: space-between;
-    width: 85vw;
+    justify-content: center;
+    margin-top: 7vh;
+}
+
+#left {
+    background-color: #6E49F5;
+    border-top-left-radius: 60px;
+}
+
+#right {
+    height: 60vh;
+    width: 50vw;
+    background-size: cover;
+    border-top-right-radius: 60px;
 }
 
 .search {
@@ -17,9 +29,10 @@ section {
 }
 
 .search input {
-    border-radius: 10px;
+    border-radius: 40px;
     font-size: 2rem;
-    padding-left: 1rem;
+    margin: 2rem;
+    padding-left: 1.5rem;
     border-style: none;
     border: solid black 2px;
     margin-right: 1rem;
@@ -35,19 +48,11 @@ section {
     border-style: none;
     border: solid black 2px;
     padding: 0.8rem;
+    margin: 2rem;
 }
 
 header h2{
     font-size: 2rem;
-}
-
-#left {
-    background-color: #6E49F5;
-}
-
-#right {
-    height: 30vh;
-    width: 30vw;
 }
 
 #weatherContainer {
