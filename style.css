@@ -2,8 +2,10 @@
 
 body {
     margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #EAEAEA;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAEAEA;
 }
 
 section {
@@ -13,6 +15,7 @@ section {
 
 #left {
     background-color: #6E49F5;
+    padding: 2rem;
 }
 
 .precipitation {
@@ -45,7 +48,6 @@ section {
 #current {
     font-size: 7rem;
     margin: 0;
-    padding: 1rem;
 }
 
 #cityName {
@@ -55,7 +57,7 @@ section {
 }
 
 #right {
-    height: auto;
+    min-height: 70vh;
     width: 80vw;
     background-size: cover;
 }
@@ -65,24 +67,18 @@ section {
 }
 
 .search input {
+    display: flex;
     border-radius: 40px;
     font-size: 2rem;
-    margin: 2rem;
-    padding-left: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5rem;
     border-style: none;
     margin-right: 1rem;
 }
 
 .search input::placeholder {
     padding-left: 1rem;
-}
-
-.search button {
-    border-radius: 10px;
-    font-size: 2rem;
-    border-style: none;
-    padding: 0.8rem;
-    margin: 2rem;
 }
 
 #cityName{
@@ -96,7 +92,7 @@ section {
 section p {
     color: #FFFFFF;
     font-size: 1rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 #weatherContainer {

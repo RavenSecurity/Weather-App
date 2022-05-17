@@ -37,7 +37,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appi
 
 })
 
-.catch(err => alert("Something Went Wrong: Try Checking Your Internet Coneciton"))
+.catch(err => alert("Something Went Wrong: check your spelling"))
 }
 
 function DefaultScreen(){
