@@ -14,7 +14,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appi
     "url('https://source.unsplash.com/1600x900/?" + newName.value + "')";
 
     document.getElementById("current").innerHTML = Number(data.list[i].main.temp - 273.15).toFixed(0)+ "°";
-    document.getElementById("precipitation").innerHTML = (data.list[i].weather[0].description);
+    document.getElementById("precipitation").innerHTML = (data.list[i].weather[0].description)+ "°";
     document.getElementById("humidity").innerHTML = Number(data.list[i].main.humidity).toFixed(0)+ "%";
     document.getElementById("wind").innerHTML = Number(data.list[i].wind.speed).toFixed(0)+ "km/h";
 

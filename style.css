@@ -1,41 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
 body {
-  margin: 1em;
+    margin: 0;
   font-family: 'Roboto', sans-serif;
   background-color: #EAEAEA;
 }
 
 section {
     display: flex;
-    justify-content: center;
-    margin-top: 7vh;
+    justify-content: space-around;
 }
 
 #left {
     background-color: #6E49F5;
-    border-top-left-radius: 60px;
+}
+
+.precipitation {
+    padding-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.humidity {
+    padding-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wind {
+    padding-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
 }
 
 .title {
+    margin: 0;
+    padding: 0;
     display: flex;
-    text-align: center;
-    vertical-align: center;
+    padding-bottom: 0.5rem;
+    flex-direction: row;
 }
 
 #current {
     font-size: 7rem;
+    margin: 0;
+    padding: 1rem;
 }
 
 #cityName {
-    vertical-align: middle;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 #right {
-    height: 60vh;
-    width: 50vw;
+    height: auto;
+    width: 80vw;
     background-size: cover;
-    border-top-right-radius: 60px;
 }
 
 .search {
@@ -79,7 +101,6 @@ section p {
 
 #weatherContainer {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 95vw;
 }
 
 #iconsContainer {

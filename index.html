@@ -14,17 +14,29 @@
     <section>
         <div id="left">
             <div class="search">
+                <form action="#" onsubmit="GetInfo()">
                 <input type="text" id="cityInput"></p>
-                <button type="button" onclick="GetInfo()" placeholder="city">Submit</button>
+                </form>
             </div>
             <div class="title">
-                <p id="current"></p>
-                <p id="cityName">Brussels</p>   
+                <p><span id="current"></span><span id="cityName">Brussels</span>
+                </p>   
+            </div>
+            <div class="precipitation">
+                <p>Sky</p>
+                <p id="precipitation"></p>
             </div>
             
-            <p>Precipation <span id="precipitation">80%</span></p>
-            <p>Humidity <span id="humidity">98%</span></p>
-            <p>Wind <span id="wind">18km/h</span></p>
+            <div class="humidity">
+                <p>Humidity</p>
+                <p id="humidity"></p>
+            </div>
+            
+            <div class="wind">
+                <p>Wind</p>
+                <p id="wind"></p>
+            </div>
+            
         </div>
         <div id="right"></div>
     </section>
