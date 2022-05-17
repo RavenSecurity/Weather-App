@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
 body {
   margin: 1em;
@@ -15,6 +15,20 @@ section {
 #left {
     background-color: #6E49F5;
     border-top-left-radius: 60px;
+}
+
+.title {
+    display: flex;
+    text-align: center;
+    vertical-align: center;
+}
+
+#current {
+    font-size: 7rem;
+}
+
+#cityName {
+    vertical-align: middle;
 }
 
 #right {
@@ -34,7 +48,6 @@ section {
     margin: 2rem;
     padding-left: 1.5rem;
     border-style: none;
-    border: solid black 2px;
     margin-right: 1rem;
 }
 
@@ -46,22 +59,32 @@ section {
     border-radius: 10px;
     font-size: 2rem;
     border-style: none;
-    border: solid black 2px;
     padding: 0.8rem;
     margin: 2rem;
 }
 
-header h2{
-    font-size: 2rem;
+#cityName{
+    font-size: 4rem;
+    color: #FFFFFF;
+    font-weight: 300;
+    justify-content: center;
+    text-align: center;
+}
+
+section p {
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-left: 2rem;
 }
 
 #weatherContainer {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 95vw;
 }
 
 #iconsContainer {
     background: #FFFFFF;
     display: flex;
-    width: 95vw;
     justify-content: space-evenly;
 }
 

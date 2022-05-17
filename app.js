@@ -1,10 +1,3 @@
-input.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    document.getElementById("myBtn").click();
-  }
-});
-
 function GetInfo() {
 
     let newName = document.getElementById("cityInput");
@@ -19,6 +12,12 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appi
 .then(data => {
     document.getElementById("right").style.backgroundImage =
     "url('https://source.unsplash.com/1600x900/?" + newName.value + "')";
+
+    document.getElementById("current").innerHTML = Number(data.list[i].main.temp - 273.15).toFixed(0)+ "°";
+    document.getElementById("precipitation").innerHTML = (data.list[i].weather[0].description);
+    document.getElementById("humidity").innerHTML = Number(data.list[i].main.humidity).toFixed(0)+ "%";
+    document.getElementById("wind").innerHTML = Number(data.list[i].wind.speed).toFixed(0)+ "km/h";
+
     //Getting the min and max values for each day
     for(i = 0; i<5; i++){
         document.getElementById("day" + (i+1) + "Min").innerHTML = Number(data.list[i].main.temp_min - 273.15).toFixed(0)+ "°";
